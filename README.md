@@ -1,5 +1,12 @@
-# dvc-project-template
-DVC project template
+# dvc-NLP-simple-usecase
+DVC NLP project
+
+## Reference repository:
+* [official reference repo](https://github.com/iterative/example-get-started)
+
+* [DVC STUDIO](https://studio.iterative.ai/)
+
+* [MY View](https://studio.iterative.ai/user/c17hawke/views/DVC-NLP-Simple-usecase-3xolnsi26a)
 
 ## STEPS -
 
@@ -21,6 +28,11 @@ OR
 source activate ./env
 ```
 
+### One shot create and activate environment
+```bash
+conda create --prefix ./env python=3.7 -y && source activate ./env
+```
+
 ### STEP 04- install the requirements
 ```bash
 pip install -r requirements.txt
@@ -32,3 +44,12 @@ dvc init
 ```
 
 ### STEP 06- commit and push the changes to the remote repository
+
+
+### extra commands - 
+
+echo "*.log" >> logs/.gitignore
+
+git rm --cached logs/running_logs.log
+
+updated by rohan 
